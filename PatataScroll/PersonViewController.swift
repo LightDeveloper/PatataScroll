@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PersonViewController: UIViewController {
 
+    var personName: String?
+    
     @IBOutlet weak var imgIsidrio: UIImageView!
     @IBOutlet weak var scrollIsidro: UIScrollView!
     
@@ -33,7 +35,7 @@ class ViewController: UIViewController {
 }
 
 // Funciones para controlar el scroll
-extension ViewController: UIScrollViewDelegate {
+extension PersonViewController: UIScrollViewDelegate {
     
     func updateMinZoomScaleForSize(_ size: CGSize) {
         debugPrint("La vista va a cambiar de layout")
