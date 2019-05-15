@@ -11,12 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var imgIsidrio: UIImageView!
+    @IBOutlet weak var scrollIsidro: UIScrollView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // Movidas chungas con delegados....
+        // Ahora me funciona el pull
         
     }
 
