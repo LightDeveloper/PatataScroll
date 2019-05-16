@@ -27,8 +27,10 @@ class TinderViewController: UIViewController {
 extension TinderViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        debugPrint("El offset es \(scrollView.contentOffset)")
+        debugPrint("El offset es \(scrollView.contentOffset) \(scrollView.frame.width)")
         
-        pagePictures.currentPage = Int(scrollView.contentOffset.x / 300)
+        let scrollWidth = scrollView.bounds.width
+        let currentPage = Int( (scrollView.contentOffset.x + (scrollWidth * 0.5)) / scrollWidth)
+        pagePictures.currentPage = currentPage
     }
 }

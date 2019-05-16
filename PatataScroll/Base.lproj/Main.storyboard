@@ -69,22 +69,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j6-hh-TuJ">
-                                <rect key="frame" x="57" y="83" width="300" height="300"/>
+                                <rect key="frame" x="32" y="83" width="350" height="350"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWO-dP-ga8">
-                                        <rect key="frame" x="0.0" y="0.0" width="1200" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1400" height="350"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Isidro" translatesAutoresizingMaskIntoConstraints="NO" id="2DB-1Y-OtM">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brian" translatesAutoresizingMaskIntoConstraints="NO" id="yFt-mo-owS">
-                                                <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                                <rect key="frame" x="350" y="0.0" width="350" height="350"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jennifer" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-rx-pZR">
-                                                <rect key="frame" x="600" y="0.0" width="300" height="300"/>
+                                                <rect key="frame" x="700" y="0.0" width="350" height="350"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ruperta" translatesAutoresizingMaskIntoConstraints="NO" id="816-Td-0UA">
-                                                <rect key="frame" x="900" y="0.0" width="300" height="300"/>
+                                                <rect key="frame" x="1050" y="0.0" width="350" height="350"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -99,7 +99,7 @@
                                     <constraint firstItem="lWO-dP-ga8" firstAttribute="top" secondItem="8j6-hh-TuJ" secondAttribute="top" id="4nU-Kt-bE3"/>
                                     <constraint firstAttribute="bottom" secondItem="lWO-dP-ga8" secondAttribute="bottom" id="5nt-A0-Yka"/>
                                     <constraint firstItem="lWO-dP-ga8" firstAttribute="leading" secondItem="8j6-hh-TuJ" secondAttribute="leading" id="70J-0O-2ZK"/>
-                                    <constraint firstAttribute="height" constant="300" id="Aq2-Hg-EK7"/>
+                                    <constraint firstAttribute="height" constant="350" id="Aq2-Hg-EK7"/>
                                     <constraint firstAttribute="width" secondItem="8j6-hh-TuJ" secondAttribute="height" multiplier="1:1" id="EBr-yt-jeL"/>
                                     <constraint firstItem="2DB-1Y-OtM" firstAttribute="width" secondItem="8j6-hh-TuJ" secondAttribute="width" id="Mx6-eO-Vys"/>
                                     <constraint firstAttribute="trailing" secondItem="lWO-dP-ga8" secondAttribute="trailing" id="tV6-F3-Pe7"/>
