@@ -109,20 +109,25 @@
                                     <outlet property="delegate" destination="m10-du-0it" id="3lW-C9-2Rd"/>
                                 </connections>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="4VX-ar-9Tf">
-                                <rect key="frame" x="188" y="402" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="4VX-ar-9Tf">
+                                <rect key="frame" x="179.5" y="456" width="55" height="37"/>
+                                <connections>
+                                    <action selector="pagePicturesChanged:" destination="m10-du-0it" eventType="valueChanged" id="6yD-RM-TSx"/>
+                                </connections>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34071420475753422" blue="0.78070078433485146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8j6-hh-TuJ" firstAttribute="centerX" secondItem="IxX-pu-odl" secondAttribute="centerX" id="FQh-gG-o9u"/>
+                            <constraint firstItem="8j6-hh-TuJ" firstAttribute="centerX" secondItem="4VX-ar-9Tf" secondAttribute="centerX" id="Owm-38-1ca"/>
                             <constraint firstItem="8j6-hh-TuJ" firstAttribute="top" secondItem="IxX-pu-odl" secondAttribute="top" constant="39" id="lvJ-UH-BAz"/>
+                            <constraint firstItem="4VX-ar-9Tf" firstAttribute="top" secondItem="2DB-1Y-OtM" secondAttribute="bottom" constant="23" id="nhm-kT-cXD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IxX-pu-odl"/>
                     </view>
                     <connections>
                         <outlet property="pagePictures" destination="4VX-ar-9Tf" id="3SS-QM-ZtW"/>
+                        <outlet property="scrollPeople" destination="8j6-hh-TuJ" id="uI3-Od-96T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hug-ZR-qtn" userLabel="First Responder" sceneMemberID="firstResponder"/>
