@@ -63,7 +63,7 @@
         <!--People Page View Controller-->
         <scene sceneID="iWf-2i-XAk">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="UKK-Lm-Ji7" customClass="PeoplePageViewController" customModule="PatataScroll" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="UKK-Lm-Ji7" customClass="PeoplePageViewController" customModule="PatataScroll" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7w9-oX-A2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-104" y="3"/>

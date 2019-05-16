@@ -11,6 +11,7 @@ import UIKit
 class PersonViewController: UIViewController {
 
     var personName: String?
+    var indexPosition = 0
     
     @IBOutlet weak var imgPerson: UIImageView!
     @IBOutlet weak var scrollPerson: UIScrollView!
@@ -31,14 +32,14 @@ class PersonViewController: UIViewController {
         } else {
             imgPerson.backgroundColor = .red
         }
-        
-        scrollPerson.zoomScale = 0.01
-    }
+            }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         updateMinZoomScaleForSize(view.bounds.size)
         updateConstraintsForSize(scrollPerson.bounds.size)
+        
+        scrollPerson.setZoomScale(0.01, animated: false)
     }
 
 }
@@ -47,7 +48,7 @@ class PersonViewController: UIViewController {
 extension PersonViewController: UIScrollViewDelegate {
     
     func updateMinZoomScaleForSize(_ size: CGSize) {
-        debugPrint("La vista va a cambiar de layout")
+//        debugPrint("La vista va a cambiar de layout")
         let widthScale = size.width / imgPerson.bounds.width
         let heightScale = size.height / imgPerson.bounds.height
         let minScale = min(widthScale, heightScale)
