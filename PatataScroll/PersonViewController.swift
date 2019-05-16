@@ -12,8 +12,8 @@ class PersonViewController: UIViewController {
 
     var personName: String?
     
-    @IBOutlet weak var imgIsidrio: UIImageView!
-    @IBOutlet weak var scrollIsidro: UIScrollView!
+    @IBOutlet weak var imgPerson: UIImageView!
+    @IBOutlet weak var scrollPerson: UIScrollView!
     
     @IBOutlet weak var contentViewTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var contentViewTopConstraint: NSLayoutConstraint!
@@ -24,12 +24,21 @@ class PersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        if let personNameUnwrapped = personName,
+            let personImage = UIImage(named: personNameUnwrapped) {
+            imgPerson.image = personImage
+        } else {
+            imgPerson.backgroundColor = .red
+        }
+        
+        scrollPerson.zoomScale = 0.01
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         updateMinZoomScaleForSize(view.bounds.size)
-        updateConstraintsForSize(scrollIsidro.bounds.size)
+        updateConstraintsForSize(scrollPerson.bounds.size)
     }
 
 }
@@ -39,28 +48,28 @@ extension PersonViewController: UIScrollViewDelegate {
     
     func updateMinZoomScaleForSize(_ size: CGSize) {
         debugPrint("La vista va a cambiar de layout")
-        let widthScale = size.width / imgIsidrio.bounds.width
-        let heightScale = size.height / imgIsidrio.bounds.height
+        let widthScale = size.width / imgPerson.bounds.width
+        let heightScale = size.height / imgPerson.bounds.height
         let minScale = min(widthScale, heightScale)
         
-        scrollIsidro.minimumZoomScale = minScale
+        scrollPerson.minimumZoomScale = minScale
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        return imgIsidrio
+        return imgPerson
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         debugPrint("scrolleando \(scrollView.contentOffset)")
-        updateConstraintsForSize(scrollIsidro.bounds.size)
+        updateConstraintsForSize(scrollPerson.bounds.size)
     }
     
     func updateConstraintsForSize(_ size: CGSize) {
-        let xOffset = max(0, (size.width - imgIsidrio.frame.width) / 2)
+        let xOffset = max(0, (size.width - imgPerson.frame.width) / 2)
         contentViewLeadingConstraint.constant = xOffset
         contentViewTrailingConstraint.constant = xOffset
 
-        let yOffset = max(0, (size.height - imgIsidrio.frame.height) / 2)
+        let yOffset = max(0, (size.height - imgPerson.frame.height) / 2)
         contentViewTopConstraint.constant = yOffset
         contentViewBottomConstraint.constant = yOffset
         

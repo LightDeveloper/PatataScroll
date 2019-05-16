@@ -13,7 +13,7 @@
         <!--Person View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="PersonViewController" customModule="PatataScroll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="PersonViewController" customModule="PatataScroll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" minimumZoomScale="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="vmz-XA-yow" userLabel="scrollIsidro">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Isidro" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-66-5hO">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brian" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-66-5hO">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
                                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
@@ -52,8 +52,8 @@
                         <outlet property="contentViewLeadingConstraint" destination="eZL-lj-UZn" id="LAn-B5-C5C"/>
                         <outlet property="contentViewTopConstraint" destination="Hhm-vO-mGZ" id="DzK-Z0-rFW"/>
                         <outlet property="contentViewTrailingConstraint" destination="9y3-XS-eJq" id="ncQ-XL-y6k"/>
-                        <outlet property="imgIsidrio" destination="h1d-66-5hO" id="WmK-Po-2ld"/>
-                        <outlet property="scrollIsidro" destination="vmz-XA-yow" id="pR7-22-KQj"/>
+                        <outlet property="imgPerson" destination="h1d-66-5hO" id="WmK-Po-2ld"/>
+                        <outlet property="scrollPerson" destination="vmz-XA-yow" id="pR7-22-KQj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,6 +70,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Isidro" width="1024" height="1024"/>
+        <image name="Brian" width="1024" height="1024"/>
     </resources>
 </document>
