@@ -15,6 +15,9 @@ class AvatarCollectionViewCell: UICollectionViewCell {
     
     func configure(name: String, imageName: String) {
         lblName.text = name
+        
+        if let personImage = UIImage(named: imageName) {
+            imgSelfie.image = personImage
+        }
     }
-    
 }

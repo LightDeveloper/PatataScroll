@@ -16,7 +16,8 @@ class SinderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        collectionPeople.dataSource = self
+        collectionPeople.delegate = self
     }
 }
 
@@ -31,10 +32,19 @@ extension SinderViewController: UICollectionViewDataSource {
         let reuseIdentifier = "AvatarCollectionViewCell"
         if let cell = collectionView.dequeueReusableCell( withReuseIdentifier: reuseIdentifier, for: indexPath) as? AvatarCollectionViewCell {
             
+            cell.configure(name: peopleNames[indexPath.row], imageName: peopleNames[indexPath.row])
+            
+            return cell
         }
+        
+        return UICollectionViewCell()
     }
+}
+
+extension SinderViewController: UICollectionViewDelegate {
     
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        debugPrint("Se ha pulsado sobre section: \(indexPath.section) row \(indexPath.row)")
+    }
     
 }
