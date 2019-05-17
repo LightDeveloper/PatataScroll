@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m10-du-0it">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fOV-XZ-U4S">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -132,7 +132,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hug-ZR-qtn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="650.72463768115949" y="673.66071428571422"/>
+            <point key="canvasLocation" x="-104" y="673"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1vz-g0-Hbi">
+            <objects>
+                <viewController id="fOV-XZ-U4S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6i-tt-6tE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rT7-5F-6xO">
+                                <rect key="frame" x="20" y="64" width="374" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="lv6-sP-DcL"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="V5k-kR-FXl">
+                                    <size key="itemSize" width="160" height="142"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="X48-HX-LVe">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Francisco" translatesAutoresizingMaskIntoConstraints="NO" id="qN0-XC-hJT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="qN0-XC-hJT" secondAttribute="height" multiplier="1:1" id="FOz-h0-Aou"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Francisco Froilan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Thj-nb-KKY">
+                                                    <rect key="frame" x="0.0" y="159" width="150" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Thj-nb-KKY" firstAttribute="leading" secondItem="X48-HX-LVe" secondAttribute="leading" id="A4O-71-RUw"/>
+                                            <constraint firstItem="qN0-XC-hJT" firstAttribute="top" secondItem="X48-HX-LVe" secondAttribute="top" id="FAm-QF-MIQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Thj-nb-KKY" secondAttribute="trailing" id="K0w-ZN-UMq"/>
+                                            <constraint firstAttribute="bottom" secondItem="Thj-nb-KKY" secondAttribute="bottom" id="gcB-SK-XoC"/>
+                                            <constraint firstItem="qN0-XC-hJT" firstAttribute="leading" secondItem="X48-HX-LVe" secondAttribute="leading" id="glu-Xb-yUb"/>
+                                            <constraint firstAttribute="trailing" secondItem="qN0-XC-hJT" secondAttribute="trailing" id="nb8-kp-6ii"/>
+                                        </constraints>
+                                        <size key="customSize" width="150" height="180"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KQK-VN-V53" firstAttribute="trailing" secondItem="rT7-5F-6xO" secondAttribute="trailing" constant="20" id="8OW-mk-2T0"/>
+                            <constraint firstItem="rT7-5F-6xO" firstAttribute="top" secondItem="KQK-VN-V53" secondAttribute="top" constant="20" id="ofq-W4-lWN"/>
+                            <constraint firstItem="rT7-5F-6xO" firstAttribute="leading" secondItem="KQK-VN-V53" secondAttribute="leading" constant="20" id="uTU-UT-zGz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KQK-VN-V53"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQC-cm-Dc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692.75362318840587" y="672.99107142857144"/>
         </scene>
         <!--People Page View Controller-->
         <scene sceneID="iWf-2i-XAk">
@@ -145,6 +213,7 @@
     </scenes>
     <resources>
         <image name="Brian" width="1024" height="1024"/>
+        <image name="Francisco" width="1024" height="1024"/>
         <image name="Isidro" width="1024" height="1024"/>
         <image name="Jennifer" width="1024" height="1024"/>
         <image name="Ruperta" width="1024" height="1024"/>
