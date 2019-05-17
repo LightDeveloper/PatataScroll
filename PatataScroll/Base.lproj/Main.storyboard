@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="-104" y="673"/>
         </scene>
-        <!--View Controller-->
+        <!--Sinder View Controller-->
         <scene sceneID="1vz-g0-Hbi">
             <objects>
-                <viewController id="fOV-XZ-U4S" sceneMemberID="viewController">
+                <viewController id="fOV-XZ-U4S" customClass="SinderViewController" customModule="PatataScroll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v6i-tt-6tE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +155,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="X48-HX-LVe">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvatarCollectionViewCell" id="X48-HX-LVe" customClass="AvatarCollectionViewCell" customModule="PatataScroll" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -185,6 +185,10 @@
                                             <constraint firstAttribute="trailing" secondItem="qN0-XC-hJT" secondAttribute="trailing" id="nb8-kp-6ii"/>
                                         </constraints>
                                         <size key="customSize" width="150" height="180"/>
+                                        <connections>
+                                            <outlet property="imgSelfie" destination="qN0-XC-hJT" id="VD4-pD-Drv"/>
+                                            <outlet property="lblName" destination="Thj-nb-KKY" id="1gu-gg-e4E"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -197,6 +201,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KQK-VN-V53"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionPeople" destination="rT7-5F-6xO" id="J9f-uC-k9z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQC-cm-Dc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

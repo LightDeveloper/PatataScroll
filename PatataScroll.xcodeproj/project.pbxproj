@@ -14,6 +14,8 @@
 		D941C227228C95E0000DAD4B /* PeoplePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D941C226228C95E0000DAD4B /* PeoplePageViewController.swift */; };
 		D941C229228C9770000DAD4B /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D941C228228C9770000DAD4B /* PersonViewController.swift */; };
 		D97926A3228DD6EB0046B1D8 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97926A2228DD6EB0046B1D8 /* TinderViewController.swift */; };
+		D9E8B4EC228F2C8C00EE527C /* SinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E8B4EB228F2C8C00EE527C /* SinderViewController.swift */; };
+		D9E8B4EE228F2F8800EE527C /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E8B4ED228F2F8800EE527C /* AvatarCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D941C226228C95E0000DAD4B /* PeoplePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePageViewController.swift; sourceTree = "<group>"; };
 		D941C228228C9770000DAD4B /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		D97926A2228DD6EB0046B1D8 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		D9E8B4EB228F2C8C00EE527C /* SinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinderViewController.swift; sourceTree = "<group>"; };
+		D9E8B4ED228F2F8800EE527C /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				D941C214228C6207000DAD4B /* AppDelegate.swift */,
 				D941C226228C95E0000DAD4B /* PeoplePageViewController.swift */,
 				D97926A2228DD6EB0046B1D8 /* TinderViewController.swift */,
+				D9E8B4EB228F2C8C00EE527C /* SinderViewController.swift */,
+				D9E8B4ED228F2F8800EE527C /* AvatarCollectionViewCell.swift */,
 				D941C228228C9770000DAD4B /* PersonViewController.swift */,
 				D941C218228C6207000DAD4B /* Main.storyboard */,
 				D941C21B228C6207000DAD4B /* Assets.xcassets */,
@@ -145,6 +151,8 @@
 				D941C227228C95E0000DAD4B /* PeoplePageViewController.swift in Sources */,
 				D97926A3228DD6EB0046B1D8 /* TinderViewController.swift in Sources */,
 				D941C215228C6207000DAD4B /* AppDelegate.swift in Sources */,
+				D9E8B4EC228F2C8C00EE527C /* SinderViewController.swift in Sources */,
+				D9E8B4EE228F2F8800EE527C /* AvatarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
